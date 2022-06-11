@@ -17,4 +17,5 @@ Como gerenciador, quero registrar cada serviço prestado vinculando a ele a data
 Como gerenciador, quero emitir nota fiscal com os dados do cliente e do seu veículo.
 
 
-# User Storie 6
+# Controle de funcionários
+Como gerenciador, quero registrar os dados dos funcionários tais como nome, CPF, salário. Quero também, fazer o controle de serviços prestados por cada funcionário e verificar suas notas.
