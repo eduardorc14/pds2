@@ -5,7 +5,7 @@
     * Carro
     * Serviços
         * Tipo
-        * Valor individual
+        * Valor unitário
         * Quantidade
     * Valor total
   
