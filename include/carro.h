@@ -20,8 +20,8 @@ class carro {
       const unsigned long ordem_de_servico,
     );
 
-    std::string _get_montadora();
-    unsigned long _get_ordem_de_servico();
+    std::string get_montadora();
+    unsigned long get_ordem_de_servico();
 }
 
 #endif
