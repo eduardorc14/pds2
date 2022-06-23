@@ -1,13 +1,13 @@
-#ifndef FUNCIONARIOS_H
-#define FUNCIONARIOS_H
+#ifndef FUNCIONARIO_H
+#define FUNCIONARIO_H
 
 #include "pessoa.h"
 
-class Funcionarios : public Pessoa {
+class Funcionario : public Pessoa {
 private:
   double _salario;
 public:
-  Funcionarios(
+  Funcionario(
     std::string nome,
     unsigned long cpf,
     double salario
