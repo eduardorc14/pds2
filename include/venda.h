@@ -18,6 +18,7 @@
 #include "cliente.h"
 #include "servico.h"
 #include "funcionario.h"
+#include "carro.h"
 
 class Venda {
   private:
