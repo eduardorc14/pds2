@@ -1,9 +1,9 @@
 #ifndef CLIENTE_H
 #define CLIENTE_H
-
-#include "pessoa.h"
 #include "carro.h"
+#include "pessoa.h"
 #include <vector>
+#include <string>
 
 class Cliente : public Pessoa {
 private:
@@ -12,8 +12,9 @@ public:
   Cliente(
     std::string nome,
     unsigned long cpf,
-    std::vector vec
+    std::vector<Carro> vec
   );
 };
+void add_carro_list(Carro carro);
 
 #endif
