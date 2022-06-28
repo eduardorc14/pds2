@@ -26,8 +26,7 @@ Como gerenciador, quero emitir nota fiscal com os dados do serviço prestado, do
 ##### Controle de funcionários
 Como gerenciador, quero registrar os dados dos funcionários tais como nome, CPF, salário. Necessito, também, de ter o controle de registros feitos por cada funcionário, além de consultar, atualizar ou deletar seus dados.
 
-### Como instalar o programa
-
+## Como instalar o programa
 - É necessário instalar em sua máquina um compilador c++, o cmake (gerador de sistema de compilação) e o git.
 - Após concluída as instalações, siga os passos abaixo:
 
