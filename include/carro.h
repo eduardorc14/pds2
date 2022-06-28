@@ -1,27 +1,21 @@
 #ifndef CARRO_H
 #define CARRO_H
 
-#include "cliente.h"
-#include "servico.h"
-
 #include <string>
-#include <map>
-/*map: quando necessário para
-construir tabelas.
-*/
 
-class carro {
-  private:
-    std::map<int, std::string> _carmontadora;
+class Carro{
+private:
+    std::string _marca;
+    std::string _modelo;
+    std::string _placa;
 
-  public:
-    Carro(
-      std::map carmontadora,
-      const unsigned long ordem_de_servico,
-    );
+public:
+  Carro(
+    std::string marca,
+    std::string modelo,
+    std::string placa
+  );
 
-    std::string get_montadora();
-    unsigned long get_ordem_de_servico();
-}
+};
 
 #endif
