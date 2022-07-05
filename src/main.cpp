@@ -5,7 +5,7 @@
 #include "pessoa.h"
 #include "cliente.h"
 #include "funcionario.h"
-#include "servico"
+#include "servico.h"
 
 
 using namespace std;
@@ -17,7 +17,7 @@ void cadastro_x(){
     double salario;
     vector <Carro> vec;
     unsigned long telefone;
-     std::string marca;
+    std::string marca;
     std::string modelo;
     std::string placa;
     string tipo;
