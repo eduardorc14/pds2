@@ -41,4 +41,4 @@ class Venda {
     //adiciona a venda ao nosso histórico
     void adicionar_venda(Venda venda);
 };
-#endif
+  #endif
