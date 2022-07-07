@@ -1,11 +1,11 @@
-#include "funcionarios.h"
+#include "funcionario.h"
 
 /**
 *@brief Construtor Class Funcionarios
 *@author Gabriel
 **/
 
-Funcionarios::Funcionarios(
+Funcionario::Funcionario(
   std::string nome,
   unsigned long cpf,
   double salario
@@ -17,6 +17,6 @@ Funcionarios::Funcionarios(
 *@return double
 **/
 
-double Funcionarios::get_salario() {
+double Funcionario::get_salario() {
   return _salario;
 }

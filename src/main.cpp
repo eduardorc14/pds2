@@ -42,11 +42,11 @@ void cadastro_x(){
         cout <<"Digite o cpf:" << endl;
         cin>>cpf;
         cout <<"Digite os carros:" << endl;
-        cin<<vec;
+        cin>>vec;
         cout <<"Digite o telefone:" << endl;
         cin>>telefone;
         Cliente cliente(nome,cpf,vec,telefone);
-        cout <<"Cliente cadastrado com sucesso:" << endl << endl;
+        cout <<"Cliente cadastrado com sucesso:" << endl 
         a=1;
         break;
     }
@@ -59,7 +59,7 @@ void cadastro_x(){
         cout <<"Digite o salario:" << endl;
         cin>>salario;
         Funcionario funcionario(nome,cpf,salario);
-        cout <<"Funcionario cadastrado com sucesso:" << endl << endl;
+        cout <<"Funcionario cadastrado com sucesso:"<< endl
         a=1;
         break;
     }
@@ -128,13 +128,13 @@ int main(){
     }
 
     if(num==2){
-    consulta_x();
+    
     y=1;
     break;
     }
 
     if(num==3){
-    atualizar_x();
+    
     y=1;
     break;
     }
