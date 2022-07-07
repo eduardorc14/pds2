@@ -5,7 +5,7 @@
 *@author Gabriel
 **/
 
-Cliente::Pessoa(
+Cliente::Cliente(
   std::string nome,
   unsigned long cpf,
   double salario

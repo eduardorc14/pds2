@@ -48,11 +48,7 @@ double Venda::valor_da_venda(Servico servico){
 **/
 
 void Venda::imprime(){
- std::cout<< "EMPRESA X LTDA" <<std::endl;
- std::cout<< "Rua X, n° 101, Bairro Y"<<std::endl;
- std::cout<< "Contato: (XX) XXXX-XXXX" <<std::endl;
- std::endl;
- 
+  
 }
 
 

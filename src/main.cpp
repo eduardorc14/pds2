@@ -46,7 +46,7 @@ void cadastro_x(){
         cout <<"Digite o telefone:" << endl;
         cin>>telefone;
         Cliente cliente(nome,cpf,vec,telefone);
-        cout <<"Cliente cadastrado com sucesso:" << endl 
+        cout <<"Cliente cadastrado com sucesso:" << endl;
         a=1;
         break;
     }
@@ -59,7 +59,7 @@ void cadastro_x(){
         cout <<"Digite o salario:" << endl;
         cin>>salario;
         Funcionario funcionario(nome,cpf,salario);
-        cout <<"Funcionario cadastrado com sucesso:"<< endl
+        cout <<"Funcionario cadastrado com sucesso:"<< endl;
         a=1;
         break;
     }
@@ -98,7 +98,35 @@ void cadastro_x(){
     }
 }
 
+void consulta_x(){
+    string cpf;
+    string placa;
+    string tipo;
+    
+    int a=0;
+    while(a==0){
+    cout <<"CONSULTAR:" << endl;
+    cout <<"1- Cliente" << endl;
+    cout <<"2- Funcionario" << endl;
+    cout <<"3- Carro" << endl;
+    cout <<"4- Servico" << endl;
+    cout <<"5- Voltar"<<endl;
+    cout <<"Digite uma das opcoes:" << endl;
+  
+    int numx=0;
+    cin >> numx;
 
+    if(numx==1){
+        cout <<"Digite o CPF do cliente:" << endl;
+        cin>>cpf;
+        
+        cout<<"Nome: "<<endl;
+         
+        a=1;
+        break;
+    }
+}
+  }
 
 int main(){
     int x=0;
@@ -156,4 +184,5 @@ int main(){
     }    
 }
     return 0;
+}
 }
