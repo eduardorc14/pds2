@@ -6,7 +6,7 @@
 using namespace std;
 
 /**
-*@brief Define o satributos do Servico
+*@brief Define os atributos do Servico
 *@author Ana Carolina
 **/
 
