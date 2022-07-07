@@ -59,5 +59,11 @@ class Venda {
    **/
    
     void adicionar_venda(Venda venda);
+   
+   /**
+   *@brief Emite a Nota Fiscal
+   **/
+   
+   void imprime();
 };
   #endif
