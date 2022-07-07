@@ -94,7 +94,10 @@ int main(){
 
     cout<<"MENU:"<<endl;
     cout<<"1- Cadastro de servicos, clientes, funcionarios ou carros."<<endl;
-    cout<<"3- Venda"<<endl;
+    cout<<"2) Consultar servicos, clientes, funcionarios ou carros."<<endl;
+    cout<<"3) Atualizar servicos, clientes, funcionarios ou carros."<<endl;
+    cout<<"4) Efetuar venda"<<endl;
+    
 
     cout<<"Digite uma das opcoes:"<<endl;
 
@@ -107,13 +110,17 @@ int main(){
             break;
 
         case 2:
+            consulta_x();
 
             break;
 
         case 3:
-            
+            atualizar_x();
             break;
 
+        case 4:
+            
+            break;
         default:
             cout << "O valor digitado não corresponde a nenhuma opcao!" << endl;
     }
