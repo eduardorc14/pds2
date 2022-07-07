@@ -1,15 +1,3 @@
-/**
-    * Data da realização do serviço
-    * Funcionário que realizou a venda (ou finalizou)
-    * Cliente
-    * Carro
-    * Serviços
-        * Tipo
-        * Valor unitário
-        * Quantidade
-    * Valor total
-  
-**/
 #ifndef VENDA_H
 #define VENDA_H
 
@@ -20,13 +8,29 @@
 #include "funcionario.h"
 #include "carro.h"
 
+/**
+*@brief Define os atributos da Venda
+*@author Eduardo
+**/
+
 class Venda {
+   
   private:
     std::string _data;
     //histórico de vendas
     std::vector<Venda> _venda;
+   
   public:
-    //construindo objeto venda
+   
+    /**
+    *@brief Construtor Class Venda
+    *@param cliente
+    *@param carro
+    *@param servico
+    *@param funcionario
+    *@param data
+    **/
+   
     Venda(
       Cliente cliente,
       Carro carro, 
@@ -34,11 +38,26 @@ class Venda {
       Funcionario funcionario,
       std::string data
     );
-    //obtem a data da venda
+   
+   /**
+   *@brief Retorna a data que foi efetuada a Venda
+   *@return string
+   **/
+   
     string get_data();
-    //método para calcular o valor da venda
-    double valor_da_venda(Servico servico);
-    //adiciona a venda ao nosso histórico
+   
+    /**
+    *@brief Determina o valor da Venda de acordo com os serviocs realizados
+    *@param Servico servico
+    **/
+   
+   double valor_da_venda(Servico servico);
+   
+   /**
+   *@brief Adiciona uma nova Venda
+   *@param Venda venda
+   **/
+   
     void adicionar_venda(Venda venda);
 };
   #endif
