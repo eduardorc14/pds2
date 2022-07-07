@@ -5,6 +5,11 @@
 
 using namespace std;
 
+/**
+*@brief Define o satributos do Servico
+*@author Ana Carolina
+**/
+
 class Servico {
 
 private:
@@ -12,9 +17,27 @@ private:
   double _precoServico;
 
 public:
+  
+  /**
+  *@brief Construtor Class Servico
+  *@param tipo
+  *@param precoServico
+  **/
+  
   Servico(string tipo, double precoServico);
 
+  /**
+  *@brief Retorna o tipo do Servico
+  *@return string
+  **/
+  
   string get_tipo();
+  
+  /**
+  *@brief Retorna o preco do Servico
+  *@return double
+  **/
+  
   double get_precoServico();
   
 };
