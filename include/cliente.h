@@ -13,8 +13,9 @@
 class Cliente : public Pessoa {
   
 private:
-  std::vector<Carro> _vec;
+  
   unsigned long _telefone;
+  Carro _carro;
   
 public:
   
@@ -22,15 +23,15 @@ public:
   *@brief Construtor Class Cliente
   *@param nome
   *@param cpf
-  *@param vec
   *@param telefone
+  *@param Carro carro
   **/
   
   Cliente(
     std::string nome,
     unsigned long cpf,
-    std::vector<Carro> vec,
-    unsigned long telefone
+    unsigned long telefone,
+    Carro carro
   );
   
   /**
@@ -40,14 +41,7 @@ public:
   
   unsigned long get_telefone();
   
+  
 };
-
-/**
-*@brief Adiciona um novo Carro ao Cliente
-*@param Carro carro
-**/
-
-void add_carro_list(Carro carro);
-
 
 #endif

@@ -13,9 +13,8 @@ using namespace std;
 
 void cadastro_x(){
     string nome;
-    string cpf;
+    unsigned long cpf;
     double salario;
-    vector <Carro> vec;
     unsigned long telefone;
     string marca;
     string modelo;
@@ -28,9 +27,8 @@ void cadastro_x(){
     cout <<"CADASTRAR:" << endl;
     cout <<"1- Cliente" << endl;
     cout <<"2- Funcionario" << endl;
-    cout <<"3- Carro" << endl;
-    cout <<"4- Servico" << endl;
-    cout <<"5- Voltar"<<endl;
+    cout <<"3- Servico" << endl;
+    cout <<"4- Voltar"<<endl;
     cout <<"Digite uma das opcoes:" << endl;
   
     int numx=0;
@@ -41,11 +39,17 @@ void cadastro_x(){
         cin>>nome;
         cout <<"Digite o cpf:" << endl;
         cin>>cpf;
-        cout <<"Digite os carros:" << endl;
-        cin>>vec;
         cout <<"Digite o telefone:" << endl;
         cin>>telefone;
-        Cliente cliente(nome,cpf,vec,telefone);
+        cout <<"Dados do carro" << endl;
+        cout <<"Digite a marca:" << endl;
+        cin>>marca;
+        cout <<"Digite o modelo:" << endl;
+        cin>>modelo;
+        cout <<"Digite a placa:" << endl;
+        cin>>placa;
+        Carro carro(marca,modelo,placa);
+        Cliente cliente(nome,cpf,telefone,carro);
         cout <<"Cliente cadastrado com sucesso:" << endl;
         a=1;
         break;
@@ -60,19 +64,6 @@ void cadastro_x(){
         cin>>salario;
         Funcionario funcionario(nome,cpf,salario);
         cout <<"Funcionario cadastrado com sucesso:"<< endl;
-        a=1;
-        break;
-    }
-
-    if(numx==3){
-        cout <<"Digite a marca:" << endl;
-        cin>>marca;
-        cout <<"Digite o modelo:" << endl;
-        cin>>modelo;
-        cout <<"Digite a placa:" << endl;
-        cin>>placa;
-        Carro carro(marca,modelo,placa);
-        cout <<"Carro cadastrado com sucesso:" << endl << endl;
         a=1;
         break;
     }
@@ -184,5 +175,4 @@ int main(){
     }    
 }
     return 0;
-}
 }

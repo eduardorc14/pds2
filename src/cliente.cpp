@@ -1,4 +1,5 @@
 #include "cliente.h"
+#include "carro.h"
 
 /**
 *@brief Construtor Class Cliente
@@ -8,15 +9,11 @@
 Cliente::Cliente(
   std::string nome,
   unsigned long cpf,
-  double salario
+  unsigned long telefone,
+  Carro carro
 ): Pessoa(nome, cpf),
-   _vec(vec) {};
+   _telefone(telefone), _carro(carro) {};
 
-/**
-*@brief Adiciona um novo Carro ao Cliente
-*@param Carro carro
-**/
-
-void Cliente::add_carro_list(Carro carro){
-    _vec.push_back(carro);
-};
+ unsigned long Cliente::get_telefone(){
+   return _telefone;
+ }
