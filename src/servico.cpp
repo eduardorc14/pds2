@@ -13,7 +13,7 @@ Servico::Servico(
 ): _tipo(tipo), _precoServico(precoServico) {};
 
 /**
-*@brief Retornar o tipo de servico
+*@brief Retorna o tipo de Servico
 *@return string
 **/
 
@@ -22,7 +22,7 @@ string Servico::get_tipo() {
 }
 
 /**
-*@brief Retornar o preco do servico
+*@brief Retorna o preco do Servico
 *@return double
 **/
 
