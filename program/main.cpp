@@ -90,9 +90,10 @@ void cadastro_x(){
 }
 
 void consulta_x(){
-    string cpf;
-    string placa;
-    string tipo;
+    string nome;
+    string telefone;
+    string *cpf;
+    string x;
     
     int a=0;
     while(a==0){
@@ -109,9 +110,10 @@ void consulta_x(){
 
     if(numx==1){
         cout <<"Digite o CPF do cliente:" << endl;
-        cin>>cpf;
+        cin>>x;
+        cpf = &x;
         
-        cout<<"Nome: "<<endl;
+        cout<<"CPF: " << *cpf <<endl;
          
         a=1;
         break;
@@ -147,7 +149,7 @@ int main(){
     }
 
     if(num==2){
-    
+    consulta_x();
     y=1;
     break;
     }
