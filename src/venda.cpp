@@ -21,7 +21,7 @@ Venda::Venda(
 **/
 
 std::string Venda::get_data(){
-  return _data;
+  return this->_data;
 }
 
 /**

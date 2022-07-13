@@ -27,5 +27,5 @@ std::string Pessoa::get_nome() const {
 **/
 
 unsigned long Pessoa::get_cpf() const {
-  return _cpf;
+  return this->_cpf;
 }

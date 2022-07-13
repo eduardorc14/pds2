@@ -18,7 +18,7 @@ Servico::Servico(
 **/
 
 string Servico::get_tipo() {
-  return _tipo;
+  return this-> _tipo;
 }
 
 /**
@@ -27,5 +27,5 @@ string Servico::get_tipo() {
 **/
 
 double Servico::get_precoServico() {
-  return _precoServico;
+  return this->_precoServico;
 }

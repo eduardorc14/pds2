@@ -22,7 +22,7 @@ Carro::Carro(
 **/
 
 string Carro::get_marca(){
-  return _marca;
+  return this-> _marca;
 }
 
 /**
@@ -31,7 +31,7 @@ string Carro::get_marca(){
 **/
 
 string Carro::get_modelo(){
-  return _modelo;
+  return this->_modelo;
 }
 
 /**
@@ -40,6 +40,6 @@ string Carro::get_modelo(){
 **/
 
 string Carro::get_placa(){
-  return _placa;
+  return this->_placa;
 }
 

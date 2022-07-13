@@ -18,5 +18,5 @@ Funcionario::Funcionario(
 **/
 
 double Funcionario::get_salario() {
-  return _salario;
+  return this->_salario;
 }

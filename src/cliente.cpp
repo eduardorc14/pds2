@@ -14,6 +14,11 @@ Cliente::Cliente(
 ): Pessoa(nome, cpf),
    _telefone(telefone), _carro(carro) {};
 
+/**
+*@brief Retorna o telefone do Cliente
+*@return unsigned long
+**/
+
  unsigned long Cliente::get_telefone(){
-   return _telefone;
+   return this->_telefone;
  }
