@@ -42,3 +42,7 @@ Como gerenciador, quero registrar os dados dos funcionários tais como nome, CPF
     ```sh
     make
     ```
+4. Em seguida, execute o comando make:
+    ```sh
+    ./main
+    ```
