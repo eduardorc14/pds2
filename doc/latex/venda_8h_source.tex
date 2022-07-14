@@ -1,0 +1,42 @@
+\doxysection{venda.\+h}
+\label{venda_8h_source}\index{Z:/home/anapessamilio/pds2/include/venda.h@{Z:/home/anapessamilio/pds2/include/venda.h}}
+\textbf{ Ir para a documentação deste ficheiro.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef VENDA\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define VENDA\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}cliente.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}servico.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}funcionario.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}carro.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }Venda \{}
+\DoxyCodeLine{17    }
+\DoxyCodeLine{18   \textcolor{keyword}{private}:}
+\DoxyCodeLine{19     std::string \_data;}
+\DoxyCodeLine{20     \textcolor{comment}{//histórico de vendas}}
+\DoxyCodeLine{21     std::vector<Venda> \_venda;}
+\DoxyCodeLine{22    }
+\DoxyCodeLine{23   \textcolor{keyword}{public}:}
+\DoxyCodeLine{24    }
+\DoxyCodeLine{34     Venda(}
+\DoxyCodeLine{35       Cliente cliente,}
+\DoxyCodeLine{36       Carro carro, }
+\DoxyCodeLine{37       Servico servico,}
+\DoxyCodeLine{38       Funcionario funcionario,}
+\DoxyCodeLine{39       std::string data}
+\DoxyCodeLine{40     );}
+\DoxyCodeLine{41    }
+\DoxyCodeLine{47     \textcolor{keywordtype}{string} get\_data();}
+\DoxyCodeLine{48    }
+\DoxyCodeLine{54    \textcolor{keywordtype}{double} valor\_da\_venda(Servico servico);}
+\DoxyCodeLine{55    }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} adicionar\_venda(Venda venda);}
+\DoxyCodeLine{62    }
+\DoxyCodeLine{67    \textcolor{keywordtype}{void} imprime();}
+\DoxyCodeLine{68 \};}
+\DoxyCodeLine{69 \textcolor{preprocessor}{  \#endif}}
+
+\end{DoxyCode}

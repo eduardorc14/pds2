@@ -1,0 +1,121 @@
+\doxysection{Referência à estrutura doctest\+::detail\+::Result\+Builder}
+\label{structdoctest_1_1detail_1_1_result_builder}\index{doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}}
+
+
+{\ttfamily \#include $<$doctest.\+h$>$}
+
+Diagrama de heranças da classe doctest\+::detail\+::Result\+Builder\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structdoctest_1_1detail_1_1_result_builder}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Result\+Builder} (\textbf{ assert\+Type\+::\+Enum} at, const char $\ast$file, int line, const char $\ast$expr, const char $\ast$exception\+\_\+type=\char`\"{}\char`\"{}, const \textbf{ String} \&exception\+\_\+string=\char`\"{}\char`\"{})
+\item 
+\textbf{ Result\+Builder} (\textbf{ assert\+Type\+::\+Enum} at, const char $\ast$file, int line, const char $\ast$expr, const char $\ast$exception\+\_\+type, const \textbf{ Contains} \&exception\+\_\+string)
+\item 
+void \textbf{ set\+Result} (const \textbf{ Result} \&res)
+\item 
+{\footnotesize template$<$int comparison, typename L , typename R $>$ }\\\textbf{ DOCTEST\+\_\+\+NOINLINE} bool \textbf{ binary\+\_\+assert} (const \textbf{ DOCTEST\+\_\+\+REF\+\_\+\+WRAP}(L) lhs, const \textbf{ DOCTEST\+\_\+\+REF\+\_\+\+WRAP}(R) rhs)
+\item 
+{\footnotesize template$<$typename L $>$ }\\\textbf{ DOCTEST\+\_\+\+NOINLINE} bool \textbf{ unary\+\_\+assert} (const \textbf{ DOCTEST\+\_\+\+REF\+\_\+\+WRAP}(L) val)
+\item 
+void \textbf{ translate\+Exception} ()
+\item 
+bool \textbf{ log} ()
+\item 
+void \textbf{ react} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Outros membros herdados}
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\label{structdoctest_1_1detail_1_1_result_builder_a135e00690002d376f3d050700a635680}} 
+\index{doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}!ResultBuilder@{ResultBuilder}}
+\index{ResultBuilder@{ResultBuilder}!doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}}
+\doxysubsubsection{ResultBuilder()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily doctest\+::detail\+::\+Result\+Builder\+::\+Result\+Builder (\begin{DoxyParamCaption}\item[{\textbf{ assert\+Type\+::\+Enum}}]{at,  }\item[{const char $\ast$}]{file,  }\item[{int}]{line,  }\item[{const char $\ast$}]{expr,  }\item[{const char $\ast$}]{exception\+\_\+type = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const \textbf{ String} \&}]{exception\+\_\+string = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\label{structdoctest_1_1detail_1_1_result_builder_ab55660e3aaa5d8fccbe19360f65bb1f3}} 
+\index{doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}!ResultBuilder@{ResultBuilder}}
+\index{ResultBuilder@{ResultBuilder}!doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}}
+\doxysubsubsection{ResultBuilder()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily doctest\+::detail\+::\+Result\+Builder\+::\+Result\+Builder (\begin{DoxyParamCaption}\item[{\textbf{ assert\+Type\+::\+Enum}}]{at,  }\item[{const char $\ast$}]{file,  }\item[{int}]{line,  }\item[{const char $\ast$}]{expr,  }\item[{const char $\ast$}]{exception\+\_\+type,  }\item[{const \textbf{ Contains} \&}]{exception\+\_\+string }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\label{structdoctest_1_1detail_1_1_result_builder_aa920a0617a26939d7adcd1ba2dec0e85}} 
+\index{doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}!binary\_assert@{binary\_assert}}
+\index{binary\_assert@{binary\_assert}!doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}}
+\doxysubsubsection{binary\_assert()}
+{\footnotesize\ttfamily template$<$int comparison, typename L , typename R $>$ \\
+\textbf{ DOCTEST\+\_\+\+NOINLINE} bool doctest\+::detail\+::\+Result\+Builder\+::binary\+\_\+assert (\begin{DoxyParamCaption}\item[{const \textbf{ DOCTEST\+\_\+\+REF\+\_\+\+WRAP}(L)}]{lhs,  }\item[{const \textbf{ DOCTEST\+\_\+\+REF\+\_\+\+WRAP}(R)}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1651                                                                            \{}
+\DoxyCodeLine{1652             m\_failed = !RelationalComparator<comparison, L, R>()(lhs, rhs);}
+\DoxyCodeLine{1653             \textcolor{keywordflow}{if} (m\_failed || getContextOptions()-\/>success) \{}
+\DoxyCodeLine{1654                 m\_decomp = stringifyBinaryExpr(lhs, \textcolor{stringliteral}{"{}, "{}}, rhs);}
+\DoxyCodeLine{1655             \}}
+\DoxyCodeLine{1656             \textcolor{keywordflow}{return} !m\_failed;}
+\DoxyCodeLine{1657         \}}
+
+\end{DoxyCode}
+\mbox{\label{structdoctest_1_1detail_1_1_result_builder_a2af75dd1d8db8d3aa949d78025854085}} 
+\index{doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}!log@{log}}
+\index{log@{log}!doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}}
+\doxysubsubsection{log()}
+{\footnotesize\ttfamily bool doctest\+::detail\+::\+Result\+Builder\+::log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{structdoctest_1_1detail_1_1_result_builder_a03686f862471728c2980d72e02980213}} 
+\index{doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}!react@{react}}
+\index{react@{react}!doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}}
+\doxysubsubsection{react()}
+{\footnotesize\ttfamily void doctest\+::detail\+::\+Result\+Builder\+::react (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\label{structdoctest_1_1detail_1_1_result_builder_a86c0ca727fead43263de4a7e9a59ad23}} 
+\index{doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}!setResult@{setResult}}
+\index{setResult@{setResult}!doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}}
+\doxysubsubsection{setResult()}
+{\footnotesize\ttfamily void doctest\+::detail\+::\+Result\+Builder\+::set\+Result (\begin{DoxyParamCaption}\item[{const \textbf{ Result} \&}]{res }\end{DoxyParamCaption})}
+
+\mbox{\label{structdoctest_1_1detail_1_1_result_builder_a5eece6aa3b1a2cb366cf5a0cc6c854a3}} 
+\index{doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}!translateException@{translateException}}
+\index{translateException@{translateException}!doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}}
+\doxysubsubsection{translateException()}
+{\footnotesize\ttfamily void doctest\+::detail\+::\+Result\+Builder\+::translate\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{structdoctest_1_1detail_1_1_result_builder_a63a2a19638f4a761c70abd5563e2d23a}} 
+\index{doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}!unary\_assert@{unary\_assert}}
+\index{unary\_assert@{unary\_assert}!doctest::detail::ResultBuilder@{doctest::detail::ResultBuilder}}
+\doxysubsubsection{unary\_assert()}
+{\footnotesize\ttfamily template$<$typename L $>$ \\
+\textbf{ DOCTEST\+\_\+\+NOINLINE} bool doctest\+::detail\+::\+Result\+Builder\+::unary\+\_\+assert (\begin{DoxyParamCaption}\item[{const \textbf{ DOCTEST\+\_\+\+REF\+\_\+\+WRAP}(L)}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+OCLINT bitwise operator in conditional
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1660                                                                           \{}
+\DoxyCodeLine{1661             m\_failed = !val;}
+\DoxyCodeLine{1662 }
+\DoxyCodeLine{1663             \textcolor{keywordflow}{if} (m\_at \& assertType::is\_false) \{ }
+\DoxyCodeLine{1664                 m\_failed = !m\_failed;}
+\DoxyCodeLine{1665             \}}
+\DoxyCodeLine{1666 }
+\DoxyCodeLine{1667             \textcolor{keywordflow}{if} (m\_failed || getContextOptions()-\/>success) \{}
+\DoxyCodeLine{1668                 m\_decomp = (DOCTEST\_STRINGIFY(val));}
+\DoxyCodeLine{1669             \}}
+\DoxyCodeLine{1670 }
+\DoxyCodeLine{1671             \textcolor{keywordflow}{return} !m\_failed;}
+\DoxyCodeLine{1672         \}}
+
+\end{DoxyCode}
+
+
+A documentação para esta estrutura foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/home/anapessamilio/pds2/third\+\_\+party/\textbf{ doctest.\+h}\end{DoxyCompactItemize}

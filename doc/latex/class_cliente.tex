@@ -1,0 +1,94 @@
+\doxysection{Referência à classe Cliente}
+\label{class_cliente}\index{Cliente@{Cliente}}
+
+
+Define os atributos do \doxyref{Cliente}{p. }{class_cliente}.  
+
+
+
+
+{\ttfamily \#include $<$cliente.\+h$>$}
+
+Diagrama de heranças da classe Cliente\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cliente}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Cliente} (std\+::string nome, std\+::string cpf, unsigned long telefone, \textbf{ Carro} carro)
+\begin{DoxyCompactList}\small\item\em Construtor Class \doxyref{Cliente}{p. }{class_cliente}. \end{DoxyCompactList}\item 
+unsigned long \textbf{ get\+\_\+telefone} ()
+\begin{DoxyCompactList}\small\item\em Retorna o telefone do \doxyref{Cliente}{p. }{class_cliente}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Define os atributos do \doxyref{Cliente}{p. }{class_cliente}. 
+
+\begin{DoxyAuthor}{Autor}
+Gabriel 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\label{class_cliente_a38bf02a33b72cf85958ded37875a6e35}} 
+\index{Cliente@{Cliente}!Cliente@{Cliente}}
+\index{Cliente@{Cliente}!Cliente@{Cliente}}
+\doxysubsubsection{Cliente()}
+{\footnotesize\ttfamily Cliente\+::\+Cliente (\begin{DoxyParamCaption}\item[{std\+::string}]{nome,  }\item[{std\+::string}]{cpf,  }\item[{unsigned long}]{telefone,  }\item[{\textbf{ Carro}}]{carro }\end{DoxyParamCaption})}
+
+
+
+Construtor Class \doxyref{Cliente}{p. }{class_cliente}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & \\
+\hline
+{\em cpf} & \\
+\hline
+{\em telefone} & \\
+\hline
+{\em \doxyref{Carro}{p. }{class_carro}} & carro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Autor}
+Gabriel 
+\end{DoxyAuthor}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14  : Pessoa(nome, cpf),}
+\DoxyCodeLine{15    \_telefone(telefone), \_carro(carro) \{\};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\label{class_cliente_a9cf50eed5b97bb7876baee12bb55b0b9}} 
+\index{Cliente@{Cliente}!get\_telefone@{get\_telefone}}
+\index{get\_telefone@{get\_telefone}!Cliente@{Cliente}}
+\doxysubsubsection{get\_telefone()}
+{\footnotesize\ttfamily unsigned long Cliente\+::get\+\_\+telefone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna o telefone do \doxyref{Cliente}{p. }{class_cliente}. 
+
+\begin{DoxyReturn}{Retorna}
+unsigned long 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                                     \{}
+\DoxyCodeLine{23    \textcolor{keywordflow}{return} this-\/>\_telefone;}
+\DoxyCodeLine{24  \}}
+
+\end{DoxyCode}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/home/anapessamilio/pds2/include/\textbf{ cliente.\+h}\item 
+Z\+:/home/anapessamilio/pds2/src/\textbf{ cliente.\+cpp}\end{DoxyCompactItemize}

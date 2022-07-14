@@ -1,0 +1,113 @@
+\doxysection{Referência à classe Pessoa}
+\label{class_pessoa}\index{Pessoa@{Pessoa}}
+
+
+Define os atributos de uma \doxyref{Pessoa}{p. }{class_pessoa}.  
+
+
+
+
+{\ttfamily \#include $<$pessoa.\+h$>$}
+
+Diagrama de heranças da classe Pessoa\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pessoa}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pessoa} (std\+::string nome, std\+::string cpf)
+\begin{DoxyCompactList}\small\item\em Construtor Class \doxyref{Pessoa}{p. }{class_pessoa}. \end{DoxyCompactList}\item 
+std\+::string \textbf{ get\+\_\+nome} () const
+\begin{DoxyCompactList}\small\item\em Retorna o nome da \doxyref{Pessoa}{p. }{class_pessoa}. \end{DoxyCompactList}\item 
+std\+::string \textbf{ get\+\_\+cpf} () const
+\begin{DoxyCompactList}\small\item\em Retorna o cpf da \doxyref{Pessoa}{p. }{class_pessoa}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Define os atributos de uma \doxyref{Pessoa}{p. }{class_pessoa}. 
+
+\begin{DoxyAuthor}{Autor}
+Gabriel 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\label{class_pessoa_a9624ee240841653858708867691990bb}} 
+\index{Pessoa@{Pessoa}!Pessoa@{Pessoa}}
+\index{Pessoa@{Pessoa}!Pessoa@{Pessoa}}
+\doxysubsubsection{Pessoa()}
+{\footnotesize\ttfamily Pessoa\+::\+Pessoa (\begin{DoxyParamCaption}\item[{std\+::string}]{nome,  }\item[{std\+::string}]{cpf }\end{DoxyParamCaption})}
+
+
+
+Construtor Class \doxyref{Pessoa}{p. }{class_pessoa}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome} & \\
+\hline
+{\em cpf} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Autor}
+Gabriel 
+\end{DoxyAuthor}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11  : \_nome(nome),}
+\DoxyCodeLine{12    \_cpf(cpf) \{}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\label{class_pessoa_a4f74054d706cb39cb6c4a185ed643596}} 
+\index{Pessoa@{Pessoa}!get\_cpf@{get\_cpf}}
+\index{get\_cpf@{get\_cpf}!Pessoa@{Pessoa}}
+\doxysubsubsection{get\_cpf()}
+{\footnotesize\ttfamily std\+::string Pessoa\+::get\+\_\+cpf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o cpf da \doxyref{Pessoa}{p. }{class_pessoa}. 
+
+\begin{DoxyReturn}{Retorna}
+unsigned long 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29                                 \{}
+\DoxyCodeLine{30   \textcolor{keywordflow}{return} this-\/>\_cpf;}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+\mbox{\label{class_pessoa_a1d6b649ad86a4230b2106842ce235bee}} 
+\index{Pessoa@{Pessoa}!get\_nome@{get\_nome}}
+\index{get\_nome@{get\_nome}!Pessoa@{Pessoa}}
+\doxysubsubsection{get\_nome()}
+{\footnotesize\ttfamily std\+::string Pessoa\+::get\+\_\+nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o nome da \doxyref{Pessoa}{p. }{class_pessoa}. 
+
+\begin{DoxyReturn}{Retorna}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20                                  \{}
+\DoxyCodeLine{21   \textcolor{keywordflow}{return} this-\/>\_nome;}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/home/anapessamilio/pds2/include/\textbf{ pessoa.\+h}\item 
+Z\+:/home/anapessamilio/pds2/src/\textbf{ pessoa.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,165 @@
+\doxysection{Referência à classe Venda}
+\label{class_venda}\index{Venda@{Venda}}
+
+
+Define os atributos da \doxyref{Venda}{p. }{class_venda}.  
+
+
+
+
+{\ttfamily \#include $<$venda.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Venda} (\textbf{ Cliente} cliente, \textbf{ Carro} carro, \textbf{ Servico} servico, \textbf{ Funcionario} funcionario, std\+::string data)
+\begin{DoxyCompactList}\small\item\em Construtor Class \doxyref{Venda}{p. }{class_venda}. \end{DoxyCompactList}\item 
+string \textbf{ get\+\_\+data} ()
+\begin{DoxyCompactList}\small\item\em Retorna a data que foi efetuada a \doxyref{Venda}{p. }{class_venda}. \end{DoxyCompactList}\item 
+double \textbf{ valor\+\_\+da\+\_\+venda} (\textbf{ Servico} servico)
+\begin{DoxyCompactList}\small\item\em Determina o valor da \doxyref{Venda}{p. }{class_venda} de acordo com os serviocs realizados. \end{DoxyCompactList}\item 
+void \textbf{ adicionar\+\_\+venda} (\textbf{ Venda} venda)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova \doxyref{Venda}{p. }{class_venda}. \end{DoxyCompactList}\item 
+void \textbf{ imprime} ()
+\begin{DoxyCompactList}\small\item\em Emite a Nota Fiscal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Define os atributos da \doxyref{Venda}{p. }{class_venda}. 
+
+\begin{DoxyAuthor}{Autor}
+Eduardo 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\label{class_venda_adda34c00c7ed25312326f495e81d2f50}} 
+\index{Venda@{Venda}!Venda@{Venda}}
+\index{Venda@{Venda}!Venda@{Venda}}
+\doxysubsubsection{Venda()}
+{\footnotesize\ttfamily Venda\+::\+Venda (\begin{DoxyParamCaption}\item[{\textbf{ Cliente}}]{cliente,  }\item[{\textbf{ Carro}}]{carro,  }\item[{\textbf{ Servico}}]{servico,  }\item[{\textbf{ Funcionario}}]{funcionario,  }\item[{std\+::string}]{data }\end{DoxyParamCaption})}
+
+
+
+Construtor Class \doxyref{Venda}{p. }{class_venda}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em cliente} & \\
+\hline
+{\em carro} & \\
+\hline
+{\em servico} & \\
+\hline
+{\em funcionario} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Autor}
+Eduardo 
+\end{DoxyAuthor}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14  \{}
+\DoxyCodeLine{15     \_data = data;}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\label{class_venda_ab8ec658a7a2fea455dbcdda6794fd28a}} 
+\index{Venda@{Venda}!adicionar\_venda@{adicionar\_venda}}
+\index{adicionar\_venda@{adicionar\_venda}!Venda@{Venda}}
+\doxysubsubsection{adicionar\_venda()}
+{\footnotesize\ttfamily void Venda\+::adicionar\+\_\+venda (\begin{DoxyParamCaption}\item[{\textbf{ Venda}}]{venda }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma nova \doxyref{Venda}{p. }{class_venda}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \doxyref{Venda}{p. }{class_venda}} & venda \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32                                        \{}
+\DoxyCodeLine{33   \_venda.push\_back(venda);}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}
+\mbox{\label{class_venda_a9e3acf63641f9820fedd65117254cb3a}} 
+\index{Venda@{Venda}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!Venda@{Venda}}
+\doxysubsubsection{get\_data()}
+{\footnotesize\ttfamily std\+::string Venda\+::get\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna a data que foi efetuada a \doxyref{Venda}{p. }{class_venda}. 
+
+\begin{DoxyReturn}{Retorna}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                          \{}
+\DoxyCodeLine{24   \textcolor{keywordflow}{return} this-\/>\_data;}
+\DoxyCodeLine{25 \}}
+
+\end{DoxyCode}
+\mbox{\label{class_venda_a2bb1b5a95b86ebd145a686d6f1a27939}} 
+\index{Venda@{Venda}!imprime@{imprime}}
+\index{imprime@{imprime}!Venda@{Venda}}
+\doxysubsubsection{imprime()}
+{\footnotesize\ttfamily void Venda\+::imprime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Emite a Nota Fiscal. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                    \{}
+\DoxyCodeLine{51   }
+\DoxyCodeLine{52 \}}
+
+\end{DoxyCode}
+\mbox{\label{class_venda_aeb775afb4ef481a9cf8467742d453d58}} 
+\index{Venda@{Venda}!valor\_da\_venda@{valor\_da\_venda}}
+\index{valor\_da\_venda@{valor\_da\_venda}!Venda@{Venda}}
+\doxysubsubsection{valor\_da\_venda()}
+{\footnotesize\ttfamily double Venda\+::valor\+\_\+da\+\_\+venda (\begin{DoxyParamCaption}\item[{\textbf{ Servico}}]{servico }\end{DoxyParamCaption})}
+
+
+
+Determina o valor da \doxyref{Venda}{p. }{class_venda} de acordo com os serviocs realizados. 
+
+Determina o valor da venda de acordo com os valores dos servicos realizados.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \doxyref{Servico}{p. }{class_servico}} & servico\\
+\hline
+{\em \doxyref{Servico}{p. }{class_servico}} & servico \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+double 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                            \{}
+\DoxyCodeLine{43   \textcolor{keywordflow}{return} servico.get\_precoServico(); }
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/home/anapessamilio/pds2/include/\textbf{ venda.\+h}\item 
+Z\+:/home/anapessamilio/pds2/src/\textbf{ venda.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,259 @@
+\doxysection{Referência ao ficheiro Z\+:/home/anapessamilio/pds2/src/main.cpp}
+\label{main_8cpp}\index{Z:/home/anapessamilio/pds2/src/main.cpp@{Z:/home/anapessamilio/pds2/src/main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include \char`\"{}carro.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pessoa.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cliente.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}funcionario.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}servico.\+h\char`\"{}}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \textbf{ pega\+\_\+sub\+\_\+string} (std\+::string str, int k)
+\begin{DoxyCompactList}\small\item\em Tratamento de Exceções. \end{DoxyCompactList}\item 
+std\+::string \textbf{ le\+\_\+entrada} (std\+::string cpf)
+\item 
+void \textbf{ cadastro\+\_\+x} ()
+\item 
+void \textbf{ consulta\+\_\+x} ()
+\item 
+int \textbf{ main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\label{main_8cpp_a6cd29951e29f57d59c1a6630e7166afd}} 
+\index{main.cpp@{main.cpp}!cadastro\_x@{cadastro\_x}}
+\index{cadastro\_x@{cadastro\_x}!main.cpp@{main.cpp}}
+\doxysubsubsection{cadastro\_x()}
+{\footnotesize\ttfamily void cadastro\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                  \{}
+\DoxyCodeLine{34     \textcolor{keywordtype}{string} nome;}
+\DoxyCodeLine{35     \textcolor{keywordtype}{string} cpf;}
+\DoxyCodeLine{36     \textcolor{keywordtype}{double} salario;}
+\DoxyCodeLine{37     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} telefone;}
+\DoxyCodeLine{38     \textcolor{keywordtype}{string} marca;}
+\DoxyCodeLine{39     \textcolor{keywordtype}{string} modelo;}
+\DoxyCodeLine{40     \textcolor{keywordtype}{string} placa;}
+\DoxyCodeLine{41     \textcolor{keywordtype}{string} tipo;}
+\DoxyCodeLine{42     \textcolor{keywordtype}{double} precoServico;}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} a=0;}
+\DoxyCodeLine{45     \textcolor{keywordflow}{while}(a==0)\{}
+\DoxyCodeLine{46     cout <<\textcolor{stringliteral}{"{}CADASTRAR:"{}} << endl;}
+\DoxyCodeLine{47     cout <<\textcolor{stringliteral}{"{}1-\/ Cliente"{}} << endl;}
+\DoxyCodeLine{48     cout <<\textcolor{stringliteral}{"{}2-\/ Funcionario"{}} << endl;}
+\DoxyCodeLine{49     cout <<\textcolor{stringliteral}{"{}3-\/ Servico"{}} << endl;}
+\DoxyCodeLine{50     cout <<\textcolor{stringliteral}{"{}4-\/ Voltar"{}}<<endl;}
+\DoxyCodeLine{51     cout <<\textcolor{stringliteral}{"{}Digite uma das opcoes:"{}} << endl;}
+\DoxyCodeLine{52   }
+\DoxyCodeLine{53     \textcolor{keywordtype}{int} numx=0;}
+\DoxyCodeLine{54     cin >> numx;}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keywordflow}{if}(numx==1)\{}
+\DoxyCodeLine{57         cout <<\textcolor{stringliteral}{"{}Digite o nome:"{}} << endl;}
+\DoxyCodeLine{58         cin>>nome;}
+\DoxyCodeLine{59         cout <<\textcolor{stringliteral}{"{}Digite o cpf:"{}} << endl;}
+\DoxyCodeLine{60         cin>>cpf;}
+\DoxyCodeLine{61         cout << le\_entrada(cpf);}
+\DoxyCodeLine{62         cout <<\textcolor{stringliteral}{"{}Digite o telefone:"{}} << endl;}
+\DoxyCodeLine{63         cin>>telefone;}
+\DoxyCodeLine{64         cout <<\textcolor{stringliteral}{"{}Dados do carro"{}} << endl;}
+\DoxyCodeLine{65         cout <<\textcolor{stringliteral}{"{}Digite a marca:"{}} << endl;}
+\DoxyCodeLine{66         cin>>marca;}
+\DoxyCodeLine{67         cout <<\textcolor{stringliteral}{"{}Digite o modelo:"{}} << endl;}
+\DoxyCodeLine{68         cin>>modelo;}
+\DoxyCodeLine{69         cout <<\textcolor{stringliteral}{"{}Digite a placa:"{}} << endl;}
+\DoxyCodeLine{70         cin>>placa;}
+\DoxyCodeLine{71         Carro carro(marca,modelo,placa);}
+\DoxyCodeLine{72         Cliente cliente(nome,cpf,telefone,carro);}
+\DoxyCodeLine{73         cout <<\textcolor{stringliteral}{"{}Cliente cadastrado com sucesso:"{}} << endl;}
+\DoxyCodeLine{74         a=1;}
+\DoxyCodeLine{75         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \textcolor{keywordflow}{if}(numx==2)\{}
+\DoxyCodeLine{79         cout <<\textcolor{stringliteral}{"{}Digite o nome:"{}} << endl;}
+\DoxyCodeLine{80         cin>>nome;}
+\DoxyCodeLine{81         cout <<\textcolor{stringliteral}{"{}Digite o cpf:"{}} << endl;}
+\DoxyCodeLine{82         cin>>cpf;}
+\DoxyCodeLine{83         cout <<\textcolor{stringliteral}{"{}Digite o salario:"{}} << endl;}
+\DoxyCodeLine{84         cin>>salario;}
+\DoxyCodeLine{85         Funcionario funcionario(nome,cpf,salario);}
+\DoxyCodeLine{86         cout <<\textcolor{stringliteral}{"{}Funcionario cadastrado com sucesso:"{}}<< endl;}
+\DoxyCodeLine{87         a=1;}
+\DoxyCodeLine{88         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{89     \}}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91     \textcolor{keywordflow}{if}(numx==4)\{}
+\DoxyCodeLine{92         cout <<\textcolor{stringliteral}{"{}Digite o tipo de servico:"{}} << endl;}
+\DoxyCodeLine{93         cin>>tipo;}
+\DoxyCodeLine{94         cout <<\textcolor{stringliteral}{"{}Digite o preco:"{}} << endl;}
+\DoxyCodeLine{95         cin>>precoServico;}
+\DoxyCodeLine{96         Servico servico(tipo,precoServico);}
+\DoxyCodeLine{97         cout <<\textcolor{stringliteral}{"{}Servico cadastrado com sucesso:"{}} << endl << endl;}
+\DoxyCodeLine{98         a=1;}
+\DoxyCodeLine{99         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{100     \}}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102     \textcolor{keywordflow}{if}(numx==5)\{}
+\DoxyCodeLine{103         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{104     \}}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{107         cout << \textcolor{stringliteral}{"{}Digite um valor valido!"{}} << endl;}
+\DoxyCodeLine{108     \}}
+\DoxyCodeLine{109     \}}
+\DoxyCodeLine{110 \}}
+
+\end{DoxyCode}
+\mbox{\label{main_8cpp_a979754448932a9ed6c4d58761f437028}} 
+\index{main.cpp@{main.cpp}!consulta\_x@{consulta\_x}}
+\index{consulta\_x@{consulta\_x}!main.cpp@{main.cpp}}
+\doxysubsubsection{consulta\_x()}
+{\footnotesize\ttfamily void consulta\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112                  \{}
+\DoxyCodeLine{113     \textcolor{keywordtype}{string} nome;}
+\DoxyCodeLine{114     \textcolor{keywordtype}{string} telefone;}
+\DoxyCodeLine{115     \textcolor{keywordtype}{string} *cpf;}
+\DoxyCodeLine{116     \textcolor{keywordtype}{string} x;}
+\DoxyCodeLine{117     }
+\DoxyCodeLine{118     \textcolor{keywordtype}{int} a=0;}
+\DoxyCodeLine{119     \textcolor{keywordflow}{while}(a==0)\{}
+\DoxyCodeLine{120     cout <<\textcolor{stringliteral}{"{}CONSULTAR:"{}} << endl;}
+\DoxyCodeLine{121     cout <<\textcolor{stringliteral}{"{}1-\/ Cliente"{}} << endl;}
+\DoxyCodeLine{122     cout <<\textcolor{stringliteral}{"{}2-\/ Funcionario"{}} << endl;}
+\DoxyCodeLine{123     cout <<\textcolor{stringliteral}{"{}3-\/ Carro"{}} << endl;}
+\DoxyCodeLine{124     cout <<\textcolor{stringliteral}{"{}4-\/ Servico"{}} << endl;}
+\DoxyCodeLine{125     cout <<\textcolor{stringliteral}{"{}5-\/ Voltar"{}}<<endl;}
+\DoxyCodeLine{126     cout <<\textcolor{stringliteral}{"{}Digite uma das opcoes:"{}} << endl;}
+\DoxyCodeLine{127   }
+\DoxyCodeLine{128     \textcolor{keywordtype}{int} numx=0;}
+\DoxyCodeLine{129     cin >> numx;}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131     \textcolor{keywordflow}{if}(numx==1)\{}
+\DoxyCodeLine{132         cout <<\textcolor{stringliteral}{"{}Digite o CPF do cliente:"{}} << endl;}
+\DoxyCodeLine{133         cin>>x;}
+\DoxyCodeLine{134         cpf = \&x;}
+\DoxyCodeLine{135         }
+\DoxyCodeLine{136         cout<<\textcolor{stringliteral}{"{}CPF: "{}} << *cpf <<endl;}
+\DoxyCodeLine{137          }
+\DoxyCodeLine{138         a=1;}
+\DoxyCodeLine{139         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{140     \}}
+\DoxyCodeLine{141 \}}
+\DoxyCodeLine{142   \}}
+
+\end{DoxyCode}
+\mbox{\label{main_8cpp_ab36873d26aaba597814e815ae8b5b344}} 
+\index{main.cpp@{main.cpp}!le\_entrada@{le\_entrada}}
+\index{le\_entrada@{le\_entrada}!main.cpp@{main.cpp}}
+\doxysubsubsection{le\_entrada()}
+{\footnotesize\ttfamily std\+::string le\+\_\+entrada (\begin{DoxyParamCaption}\item[{std\+::string}]{cpf }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                                     \{}
+\DoxyCodeLine{23     \textcolor{keywordflow}{while} (1) \{}
+\DoxyCodeLine{24     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{25       \textcolor{keywordflow}{return} pega\_sub\_string(cpf, 11);}
+\DoxyCodeLine{26     \} \textcolor{keywordflow}{catch} (std::out\_of\_range \&e) \{}
+\DoxyCodeLine{27       std::cerr << \textcolor{stringliteral}{"{}Entrada invalida! Digite novamente."{}} << std::endl;}
+\DoxyCodeLine{28     \}}
+\DoxyCodeLine{29   \}}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}
+\mbox{\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{main()}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{144           \{}
+\DoxyCodeLine{145     \textcolor{keywordtype}{int} x=0;}
+\DoxyCodeLine{146     \textcolor{keywordtype}{int} y=0;}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148     \textcolor{keywordflow}{while}(x==0)\{}
+\DoxyCodeLine{149     y=0;}
+\DoxyCodeLine{150     \textcolor{keywordflow}{while}(y==0)\{}
+\DoxyCodeLine{151     cout<<\textcolor{stringliteral}{"{}Bem vindo ao sistema de gerenciamento de servicos automotivos!"{}}<<endl;}
+\DoxyCodeLine{152     cout<<\textcolor{stringliteral}{"{}MENU:"{}}<<endl;}
+\DoxyCodeLine{153     cout<<\textcolor{stringliteral}{"{}1-\/ Cadastro de servicos, clientes, funcionarios ou carros."{}}<<endl;}
+\DoxyCodeLine{154     cout<<\textcolor{stringliteral}{"{}2) Consultar servicos, clientes, funcionarios ou carros."{}}<<endl;}
+\DoxyCodeLine{155     cout<<\textcolor{stringliteral}{"{}3) Atualizar servicos, clientes, funcionarios ou carros."{}}<<endl;}
+\DoxyCodeLine{156     cout<<\textcolor{stringliteral}{"{}4) Efetuar venda"{}}<<endl;}
+\DoxyCodeLine{157     cout<<\textcolor{stringliteral}{"{}5) Sair"{}}<<endl;}
+\DoxyCodeLine{158     }
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160     cout<<\textcolor{stringliteral}{"{}Digite uma das opcoes:"{}}<<endl;}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162     \textcolor{keywordtype}{int} num = 0;}
+\DoxyCodeLine{163     cin >> num;}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{165     \textcolor{keywordflow}{if}(num==1)\{}
+\DoxyCodeLine{166     cadastro\_x();}
+\DoxyCodeLine{167     y=1;}
+\DoxyCodeLine{168     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{169     \}}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171     \textcolor{keywordflow}{if}(num==2)\{}
+\DoxyCodeLine{172     consulta\_x();}
+\DoxyCodeLine{173     y=1;}
+\DoxyCodeLine{174     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{175     \}}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{177     \textcolor{keywordflow}{if}(num==3)\{}
+\DoxyCodeLine{178     }
+\DoxyCodeLine{179     y=1;}
+\DoxyCodeLine{180     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{181     \}}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183     \textcolor{keywordflow}{if}(num==4)\{}
+\DoxyCodeLine{184     }
+\DoxyCodeLine{185     y=1;}
+\DoxyCodeLine{186     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{187     \}}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189     \textcolor{keywordflow}{if}(num==5)\{}
+\DoxyCodeLine{190     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{191     \}}
+\DoxyCodeLine{192     }
+\DoxyCodeLine{193     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{194     cout << \textcolor{stringliteral}{"{}Digite um valor valido!"{}} << endl; }
+\DoxyCodeLine{195     \}}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197     \}    }
+\DoxyCodeLine{198 \}}
+\DoxyCodeLine{199     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{200 \}}
+
+\end{DoxyCode}
+\mbox{\label{main_8cpp_abff366e5a3098581894e908d4727c902}} 
+\index{main.cpp@{main.cpp}!pega\_sub\_string@{pega\_sub\_string}}
+\index{pega\_sub\_string@{pega\_sub\_string}!main.cpp@{main.cpp}}
+\doxysubsubsection{pega\_sub\_string()}
+{\footnotesize\ttfamily std\+::string pega\+\_\+sub\+\_\+string (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Tratamento de Exceções. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                                                 \{}
+\DoxyCodeLine{19   \textcolor{keywordflow}{return} str.substr(k);}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
