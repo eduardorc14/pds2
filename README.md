@@ -1,12 +1,6 @@
 # Sistema de Gerenciamento
 O projeto, requisitado pela disciplina de Programação de Desenvolvimento de Software II, foi desenvolvido para o gerenciamento de um Centro de Serviços Automotivos.
 
-## Alunos
-- Ana Carolina Nascimento de Castro Pessamilio _ 2020026753
-- Gabriel Henrique Silva Maia _ 2020103197
-- Eduardo Rodrigues Cordeiro _ 2019103863
-- Nilson Silvério Ferreira da Cruz Filho _ 2020100058
-
 ## User Stories
 ##### Controle de serviços prestados
 Como gerenciador, quero cadastrar os serviços que a empresa pode oferecer e especificar seus valores unitários. Necessito, também, de consultar, atualizar e deletar cada serviço ou seus valores.
