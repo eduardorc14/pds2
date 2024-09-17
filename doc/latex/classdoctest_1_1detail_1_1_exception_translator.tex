@@ -1,0 +1,80 @@
+\doxysection{Referência à classe Template doctest\+::detail\+::Exception\+Translator$<$ T $>$}
+\label{classdoctest_1_1detail_1_1_exception_translator}\index{doctest::detail::ExceptionTranslator$<$ T $>$@{doctest::detail::ExceptionTranslator$<$ T $>$}}
+
+
+OCLINT destructor of virtual class.  
+
+
+
+
+{\ttfamily \#include $<$doctest.\+h$>$}
+
+Diagrama de heranças da classe doctest\+::detail\+::Exception\+Translator$<$ T $>$\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdoctest_1_1detail_1_1_exception_translator}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Exception\+Translator} (\textbf{ String}($\ast$translate\+Function)(T))
+\item 
+bool \textbf{ translate} (\textbf{ String} \&res) const override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+\subsubsection*{template$<$typename T$>$\newline
+class doctest\+::detail\+::\+Exception\+Translator$<$ T $>$}
+OCLINT destructor of virtual class. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\label{classdoctest_1_1detail_1_1_exception_translator_a3ac05488993c40c6ba55ce51a6bf7eae}} 
+\index{doctest::detail::ExceptionTranslator$<$ T $>$@{doctest::detail::ExceptionTranslator$<$ T $>$}!ExceptionTranslator@{ExceptionTranslator}}
+\index{ExceptionTranslator@{ExceptionTranslator}!doctest::detail::ExceptionTranslator$<$ T $>$@{doctest::detail::ExceptionTranslator$<$ T $>$}}
+\doxysubsubsection{ExceptionTranslator()}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\textbf{ doctest\+::detail\+::\+Exception\+Translator}$<$ T $>$\+::\+Exception\+Translator (\begin{DoxyParamCaption}\item[{\textbf{ String}($\ast$)(T)}]{translate\+Function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1764                 : m\_translateFunction(translateFunction) \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\label{classdoctest_1_1detail_1_1_exception_translator_a56484c4218a06bbbd1548335a8b64110}} 
+\index{doctest::detail::ExceptionTranslator$<$ T $>$@{doctest::detail::ExceptionTranslator$<$ T $>$}!translate@{translate}}
+\index{translate@{translate}!doctest::detail::ExceptionTranslator$<$ T $>$@{doctest::detail::ExceptionTranslator$<$ T $>$}}
+\doxysubsubsection{translate()}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \textbf{ doctest\+::detail\+::\+Exception\+Translator}$<$ T $>$\+::translate (\begin{DoxyParamCaption}\item[{\textbf{ String} \&}]{res }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implementa \textbf{ doctest\+::detail\+::\+IException\+Translator} \doxyref{}{p. }{structdoctest_1_1detail_1_1_i_exception_translator_a9c56005e4c83c13b859cc2e31102bfbc}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1766                                                    \{}
+\DoxyCodeLine{1767 \textcolor{preprocessor}{\#ifndef DOCTEST\_CONFIG\_NO\_EXCEPTIONS}}
+\DoxyCodeLine{1768             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{1769                 \textcolor{keywordflow}{throw}; \textcolor{comment}{// lgtm [cpp/rethrow-\/no-\/exception]}}
+\DoxyCodeLine{1770                 \textcolor{comment}{// cppcheck-\/suppress catchExceptionByValue}}
+\DoxyCodeLine{1771             \} \textcolor{keywordflow}{catch}(\textcolor{keyword}{const} T\& ex) \{}
+\DoxyCodeLine{1772                 res = m\_translateFunction(ex); }
+\DoxyCodeLine{1773                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{1774             \} \textcolor{keywordflow}{catch}(...) \{\}         }
+\DoxyCodeLine{1775 \textcolor{preprocessor}{\#endif                              }\textcolor{comment}{// DOCTEST\_CONFIG\_NO\_EXCEPTIONS}}
+\DoxyCodeLine{1776             \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{void}\textcolor{keyword}{>}(res); \textcolor{comment}{// to silence -\/Wunused-\/parameter}}
+\DoxyCodeLine{1777             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{1778         \}}
+
+\end{DoxyCode}
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/home/anapessamilio/pds2/third\+\_\+party/\textbf{ doctest.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\doxysection{Referência à estrutura Template doctest\+::detail\+::String\+Maker\+Base$<$ C $>$}
+\label{structdoctest_1_1detail_1_1_string_maker_base}\index{doctest::detail::StringMakerBase$<$ C $>$@{doctest::detail::StringMakerBase$<$ C $>$}}
+
+
+{\ttfamily \#include $<$doctest.\+h$>$}
+
+\doxysubsection*{Membros públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \textbf{ String} \textbf{ convert} (const \textbf{ DOCTEST\+\_\+\+REF\+\_\+\+WRAP}(T))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\label{structdoctest_1_1detail_1_1_string_maker_base_a67d29f2a5de9a522d8e8607c1a39db9b}} 
+\index{doctest::detail::StringMakerBase$<$ C $>$@{doctest::detail::StringMakerBase$<$ C $>$}!convert@{convert}}
+\index{convert@{convert}!doctest::detail::StringMakerBase$<$ C $>$@{doctest::detail::StringMakerBase$<$ C $>$}}
+\doxysubsubsection{convert()}
+{\footnotesize\ttfamily template$<$bool C$>$ \\
+template$<$typename T $>$ \\
+static \textbf{ String} \textbf{ doctest\+::detail\+::\+String\+Maker\+Base}$<$ C $>$\+::convert (\begin{DoxyParamCaption}\item[{const }]{DOCTEST\+\_\+\+REF\+\_\+\+WRAPT }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1012                                                          \{}
+\DoxyCodeLine{1013 \textcolor{preprocessor}{\#ifdef DOCTEST\_CONFIG\_REQUIRE\_STRINGIFICATION\_FOR\_ALL\_USED\_TYPES}}
+\DoxyCodeLine{1014             \textcolor{keyword}{static\_assert}(deferred\_false<T>::value, \textcolor{stringliteral}{"{}No stringification detected for type T. See string conversion manual"{}});}
+\DoxyCodeLine{1015 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{1016             \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}\{?\}"{}};}
+\DoxyCodeLine{1017         \}}
+
+\end{DoxyCode}
+
+
+A documentação para esta estrutura foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/home/anapessamilio/pds2/third\+\_\+party/\textbf{ doctest.\+h}\end{DoxyCompactItemize}

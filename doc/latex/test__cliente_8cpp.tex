@@ -1,0 +1,41 @@
+\doxysection{Referência ao ficheiro Z\+:/home/anapessamilio/pds2/test/test\+\_\+cliente.cpp}
+\label{test__cliente_8cpp}\index{Z:/home/anapessamilio/pds2/test/test\_cliente.cpp@{Z:/home/anapessamilio/pds2/test/test\_cliente.cpp}}
+{\ttfamily \#include \char`\"{}doctest.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cliente.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}carro.\+h\char`\"{}}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ TEST\+\_\+\+CASE} (\char`\"{}Testando construtor \textbf{ Cliente}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Teste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\label{test__cliente_8cpp_a4a2627c43ee6e53368298a11317d0091}} 
+\index{test\_cliente.cpp@{test\_cliente.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test\_cliente.cpp@{test\_cliente.cpp}}
+\doxysubsubsection{TEST\_CASE()}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{\char`\"{}Testando construtor \textbf{ Cliente}\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Teste. 
+
+\begin{DoxyAuthor}{Autor}
+Eduardo 
+\end{DoxyAuthor}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                                         \{}
+\DoxyCodeLine{11   Carro carro(\textcolor{stringliteral}{"{}Fiat"{}}, \textcolor{stringliteral}{"{}Argo"{}}, \textcolor{stringliteral}{"{}PVA1145"{}});}
+\DoxyCodeLine{12     CHECK\_EQ(carro.get\_marca(), \textcolor{stringliteral}{"{}Fiat"{}});}
+\DoxyCodeLine{13     CHECK\_EQ(carro.get\_modelo(), \textcolor{stringliteral}{"{}Argo"{}});}
+\DoxyCodeLine{14     CHECK\_EQ(carro.get\_placa(), \textcolor{stringliteral}{"{}PVA1145"{}}); }
+\DoxyCodeLine{15   }
+\DoxyCodeLine{16   Cliente cliente(\textcolor{stringliteral}{"{}Ana"{}}, \textcolor{stringliteral}{"{}12548756988"{}}, \textcolor{stringliteral}{"{}031945786325"{}});}
+\DoxyCodeLine{17     CHECK\_EQ(cliente.get\_nome(), \textcolor{stringliteral}{"{}Ana"{}});}
+\DoxyCodeLine{18     CHECK\_EQ(cliente.get\_cpf(), \textcolor{stringliteral}{"{}12548756988"{}});}
+\DoxyCodeLine{19     CHECK\_EQ(cliente.get\_telefone(), \textcolor{stringliteral}{"{}031945786325"{}});   }
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
